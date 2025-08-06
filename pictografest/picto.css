@@ -1,0 +1,8 @@
+.jumbotron-custom {
+  background-image: url('gambar.jpg'); /* Ganti dengan path gambar kamu */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* atau sesuaikan */
+  border-radius: 1rem;
+  padding: 2rem;
+}
