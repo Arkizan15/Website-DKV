@@ -1,0 +1,125 @@
+.hero-section {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero-image {
+  width: 900%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Biar teksnya tetap terbaca */
+}
+/* Overlay di atas gambar kegiatan */
+.overlay-box {
+position: absolute;
+bottom: 20px;
+left: 20px;
+background: rgba(0, 121, 107, 0.9); /* Warna hijau transparan */
+border-radius: 8px;
+max-width: 280px;
+}
+.overlay-box {
+position: absolute;
+bottom: 20px;
+left: 20px;
+background-color: rgba(0, 121, 107, 0.9);
+border-radius: 8px;
+max-width: 280px;
+}
+body {
+font-family: 'Segoe UI', sans-serif;
+}
+
+.bg-teal {
+background-color: #00796B;
+}
+
+.header {
+background-image: url("../img/Beberapa moment Pictografest 13 Juni 2025 📸Sedikit chaos, banyak tawa, dan penuh rasa bangga.I (3).jpg");
+background-size: cover;
+background-position: center;
+height: 300px;
+}
+
+.foto-kegiatan {
+background-color: #004D40;
+}
+
+.footer {
+background-color: #00796B;
+}
+
+.menu-section .btn {
+font-weight: 600;
+}
+.apa-kata-mereka {
+text-align: center;
+padding: 30px 15px;
+background-color: #0a615e;
+color: white;
+}
+
+.apa-kata-mereka h2 {
+font-size: 24px;
+margin-bottom: 20px;
+}
+
+.apa-kata-mereka img {
+max-width: 85%;
+height: auto;
+border-radius: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+margin-bottom: 20px;
+}
+
+.apa-kata-mereka p {
+font-size: 16px;
+max-width: 600px;
+margin: 0 auto;
+line-height: 1.5;
+}
+/* -
+-Apa Kata Mereka -
+-*/
+.apa-kata-mereka {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+padding: 50px 20px;
+background-color: #0a615e;
+color: white;
+width: 100%;
+max-width: 1200px;
+margin: 0 auto;
+text-align: center;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+}
+.apa-kata-mereka h2 {
+font-size: 28px;
+margin-bottom: 20px;
+}
+
+.apa-kata-mereka img {
+max-width: 80%;
+height: auto;
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+margin-bottom: 20px;
+}
+
+.apa-kata-mereka p {
+font-size: 16px;
+max-width: 600px;
+line-height: 1.6;
+}

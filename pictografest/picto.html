@@ -1,39 +1,188 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="picto.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" aria-current="page" href="#">Beranda</a>
-        <a class="nav-link" href="#">Features</a>
-        <a class="nav-link" href="#">Pricing</a>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pictografest Landing</title>
+  <link rel="stylesheet" href="picto.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+</head>
+<body>
+ <nav class="navbar navbar-expand-lg" style="background-color: #24A292;">
+      <div class="container-fluid">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand me-2" href="#">
+            <img src="../img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
+          </a>
+          <div class="d-flex flex-column text-white">
+            <span class="fw-bold" style="line-height: 1;">DKV</span>
+            <span class="fw-bold" style="line-height: 1;">ESEMKASA</span>
+          </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active text-white" aria-current="page" href="#">Beranda</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Profil
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Jurusan</a></li>
+                <li><a class="dropdown-item" href="#">Guru Pengajar</a></li>
+              </ul>
+            </li>
+             <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Akademik
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Kurikulum</a></li>
+                <li><a class="dropdown-item" href="#">Laboraturium DKV</a></li>
+                <li><a class="dropdown-item" href="#">Profil Lulusan</a></li>
+              </ul>
+            </li>
+            <a class="nav-link text-white" href="#">Pictografest</a>
+            <a class="nav-link text-white" href="#">Software</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+ 
+  <!-- Landing Page Section -->
+  <div class="landing-page">
+    <div class="container-fluid py-5">
+      <h1 class="picto-question display-5 fw-bold">
+  <span class="bg-yellow">
+    <span class="gradient-text">Apa itu Pictografest?</span>
+  </span>
+</h1>
+      <p class="col-md-8 fs-4 mt-2">
+        Pictografest adalah sebuah pameran seni tahunan yang diselenggarakan oleh SMKN 1 Banyuwangi. 
+        Pameran ini menampilkan karya-karya kreatif hasil buatan siswa dari berbagai jurusan, dengan fokus utama pada bidang seni dan desain.
+      </p>
+    </div>
+  </div>
+
+  <!-- Photo Buttons Section -->
+  <div class="button-picto-section py-5">
+    <div class="container">
+      <div class="row g-4">
         
+        <!-- Button 1 -->
+        <div class="col-lg-4 col-md-6">
+          <button class="photo-button w-100">
+            <img src="../img/picto-view.webp" alt="Pictografest" class="button-bg">
+            <div class="button-content">
+              <h3 class="button-title">PICTOGRAFEST</h3>
+              <p class="button-subtitle">Apa itu Pictografest?</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Button 2 -->
+        <div class="col-lg-4 col-md-6">
+          <button class="photo-button w-100">
+            <img src="../img/picto-diskusi.webp" alt="Tujuan" class="button-bg">
+            <div class="button-content">
+              <h3 class="button-title">TUJUAN</h3>
+              <p class="button-subtitle">Mengapa diadakan?</p>
+            </div>
+          </button>
+        </div>
+
+        <!-- Button 3 -->
+        <div class="col-lg-4 col-md-6">
+          <button class="photo-button w-100">
+            <img src="../img/picto-recap-day1.webp" alt="Galeri" class="button-bg">
+            <div class="button-content">
+              <h3 class="button-title">GALERI</h3>
+              <p class="button-subtitle">Koleksi foto terbaik</p>
+            </div>
+          </button>
+        </div>
+
       </div>
     </div>
   </div>
-</nav>
-<div class="container mt-4">
-  <div class="jumbotron-custom text-white d-flex align-items-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Selamat Datang!</h1>
-      <p class="lead">Ini adalah jumbotron dengan gambar latar belakang.</p>
-      <a href="#" class="btn btn-primary btn-lg">Pelajari Selengkapnya</a>
-    </div>
-  </div>
-</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-  </body>
+  <!-- Tujuan Section -->
+  <section class="tujuan-section">
+    <div class="tujuan-container">
+      <div class="tujuan-image">
+        <img src="../img/picto-view.webp" alt="Pictografest Showcase">
+      </div>
+      <div class="tujuan-content">
+        <h2>Tujuan Pictografest</h2>
+        <p>Tujuan Pictografest diadakan adalah memamerkan kepada khalayak ramai karya-karya apa saja yang telah dibuat oleh siswa-siswi SMKN 1 Banyuwangi.</p>
+        <p>Karya yang ditampilkan sangat beragam dan berasal dari berbagai jurusan yang ada di SMKN 1 Banyuwangi, seperti.</p>
+        <ul>
+          <li>PPLG (Pengembangan Perangkat Lunak dan Gim)</li>
+          <li>BCF (Broadcasting dan Perfilman)</li>
+          <li>Seni Tari</li>
+          <li>Kuliner</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Galeri Pictografest Section -->
+  <section class="galeri-pictografest-section">
+    <div class="galeri-container">
+      <div class="galeri-header">
+        <h2 class="galeri-title">
+          <span class="bg-yellow">
+            <span class="gradient-text">Galeri Pictografest 7</span>
+          </span>
+        </h2>
+      </div>
+      
+      <div class="galeri-grid">
+        <!-- Row 1 -->
+        <div class="galeri-item">
+          <img src="../img/picto-recap-day1.webp" alt="Galeri Pictografest 1">
+        </div>
+        <div class="galeri-item">
+          <img src="../img/picto-mc.webp" alt="Galeri Pictografest 2">
+        </div>
+        <div class="galeri-item">
+          <img src="../img/picto-tari.webp" alt="Galeri Pictografest 3">
+        </div>
+        
+        <!-- Row 2 -->
+        <div class="galeri-item galeri-featured">
+          <img src="../img/picto-recap2.webp" alt="Galeri Pictografest 4">
+        </div>
+        <div class="galeri-item galeri-featured">
+          <img src="../img/picto-diskusi.webp" alt="Galeri Pictografest 5">
+        </div>
+        <div class="galeri-item galeri-featured">
+          <img src="../img/picto-game.webp" alt="Galeri Pictografest 6">
+        </div>
+        
+        <!-- Row 3 -->
+        <div class="galeri-item">
+          <img src="../img/picto-recap3.webp" alt="Galeri Pictografest 7">
+        </div>
+        <div class="galeri-item">
+          <img src="../img/picto-gojo.webp" alt="Galeri Pictografest 8">
+        </div>
+        <div class="galeri-item">
+          <img src="../img/picto-view.webp" alt="Galeri Pictografest 9">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  
+</body>
 </html>
