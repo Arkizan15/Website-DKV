@@ -1,125 +1,98 @@
-.hero-section {
+/* Section: Apa Kata Mereka */
+.apa-kata-mereka {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  color: white;
+  color: rgb(255, 255, 255);
+  padding: 60px 20px;
+  background-image: url('../img/foto-view.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 400px;
+  width: 100%;
 }
 
-.hero-image {
-  width: 900%;
-  height: auto;
-  display: block;
-}
-
-.hero-text {
+/* Overlay gelap agar teks terbaca */
+.apa-kata-mereka::before {
+  content: '';
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.7); /* Biar teksnya tetap terbaca */
-}
-/* Overlay di atas gambar kegiatan */
-.overlay-box {
-position: absolute;
-bottom: 20px;
-left: 20px;
-background: rgba(0, 121, 107, 0.9); /* Warna hijau transparan */
-border-radius: 8px;
-max-width: 280px;
-}
-.overlay-box {
-position: absolute;
-bottom: 20px;
-left: 20px;
-background-color: rgba(0, 121, 107, 0.9);
-border-radius: 8px;
-max-width: 280px;
-}
-body {
-font-family: 'Segoe UI', sans-serif;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-.bg-teal {
-background-color: #00796B;
-}
-
-.header {
-background-image: url("../img/Beberapa moment Pictografest 13 Juni 2025 📸Sedikit chaos, banyak tawa, dan penuh rasa bangga.I (3).jpg");
-background-size: cover;
-background-position: center;
-height: 300px;
-}
-
-.foto-kegiatan {
-background-color: #004D40;
-}
-
-.footer {
-background-color: #00796B;
-}
-
-.menu-section .btn {
-font-weight: 600;
-}
-.apa-kata-mereka {
-text-align: center;
-padding: 30px 15px;
-background-color: #0a615e;
-color: white;
+/* Konten di atas overlay */
+.apa-kata-mereka .overlay-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
 }
 
 .apa-kata-mereka h2 {
-font-size: 24px;
-margin-bottom: 20px;
-}
-
-.apa-kata-mereka img {
-max-width: 85%;
-height: auto;
-border-radius: 15px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-margin-bottom: 20px;
+  font-size: 28px;
+  margin-bottom: 20px;
 }
 
 .apa-kata-mereka p {
-font-size: 16px;
-max-width: 600px;
-margin: 0 auto;
-line-height: 1.5;
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
 }
-/* -
--Apa Kata Mereka -
--*/
-.apa-kata-mereka {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
-padding: 50px 20px;
-background-color: #0a615e;
-color: white;
-width: 100%;
-max-width: 1200px;
-margin: 0 auto;
-text-align: center;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-border-radius: 15px;
-}
-.apa-kata-mereka h2 {
-font-size: 28px;
-margin-bottom: 20px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  width: 100%;
+  max-width: 1100px;
+  box-sizing: border-box;
 }
 
-.apa-kata-mereka img {
-max-width: 80%;
-height: auto;
-border-radius: 12px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-margin-bottom: 20px;
+/* Setiap item menu */
+.menu-item {
+  position: relative;
+  background-color: #004d40;
+  color: rgb(255, 255, 255);
+  height: 200px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
-.apa-kata-mereka p {
-font-size: 16px;
-max-width: 600px;
-line-height: 1.6;
+.menu-item:hover {
+  transform: scale(1.05);
+}
+
+/* Gambar latar */
+.menu-item img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Teks di atas gambar */
+.menu-item span {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+.container {
+    background-color: #004d40;
 }
