@@ -1,11 +1,79 @@
- <!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
- <!-- NAVBAR -->
+    <title>Laboratorium DKV</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-color: #074C43;
+        color: white;
+      }
+      .sidebar {
+        background-color: #063E37;
+        min-height: 100vh;
+        padding-top: 20px;
+      }
+      .sidebar .nav-link {
+        color: white;
+        padding: 10px 20px;
+        font-weight: 500;
+      }
+      .sidebar .nav-link.active {
+        background-color: #052F2A;
+        border-left: 5px solid white;
+      }
+      .content {
+        padding: 30px;
+      }
+      h4 {
+        font-weight: bold;
+      }
+      .section-title {
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .intro-text {
+        font-size: 1rem;
+        font-weight: normal;
+      }
+      .img-profil {
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .sidebar img {
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+      }
+      .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 30px;
+      }
+      .gallery-item {
+        background-color: white;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease;
+      }
+      .gallery-item img {
+        width: 100%;
+        display: block;
+      }
+      .gallery-item:hover {
+        transform: scale(1.03);
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg" style="background-color: #24A292;">
       <div class="container-fluid">
         <div class="d-flex align-items-center">
@@ -18,32 +86,27 @@
           </div>
         </div>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
           <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active text-white" aria-current="page" href="#">Beranda</a>
+              <a class="nav-link active text-white" href="#">Beranda</a>
             </li>
-
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Profil
-              </a>
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Profil</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="#">Jurusan</a></li>
                 <li><a class="dropdown-item" href="#">Guru Pengajar</a></li>
               </ul>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Akademik
-              </a>
+              <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown">Akademik</a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="index.html">Kurikulum</a></li>
-                <li><a class="dropdown-item" href="laboraturium.html">Laboraturium DKV</a></li>
+                <li><a class="dropdown-item" href="laboraturium.html">Laboratorium DKV</a></li>
                 <li><a class="dropdown-item" href="profillulusan.html">Profil Lulusan</a></li>
               </ul>
             </li>
@@ -53,15 +116,177 @@
         </div>
       </div>
     </nav>
-    <!-- NAVBAR -->
+    <!-- NAVBAR END -->
 
     <div class="container-fluid">
       <div class="row">
         <!-- Sidebar -->
         <div class="col-md-3 sidebar">
           <nav class="nav flex-column">
-            <a class="nav-link active" href="index.html">Kurikulum</a>
-            <a class="nav-link" href="laboraturium.html">Laboratorium</a>
+            <a class="nav-link" href="index.html">Kurikulum</a>
+            <a class="nav-link active" href="laboraturium.html">Laboratorium</a>
             <a class="nav-link" href="profillulusan.html">Profil Lulusan</a>
           </nav>
+          <img src="../img/bg1.png" alt="Sidebar Image">
         </div>
+
+        <!-- Konten Utama -->
+        <div class="col-md-9 content">
+          <h4 class="section-title">Laboratorium</h4>
+
+          <div class="row mb-4">
+            <div class="col-md-8 d-flex align-items-center">
+              <p class="intro-text">
+                Jurusan Desain Komunikasi Visual (DKV) memiliki dua laboratorium yang digunakan sebagai ruang praktik utama <br>
+                bagi para siswa dalam mengembangkan keterampilan desain mereka. pembelajaran yang kreatif dan profesional. 
+              </p>
+            </div>
+          </div>
+
+          <!-- Laboratorium B12 -->
+          <div class="row mb-4">
+            <div class="col-md-5 d-flex align-items-center">
+              <p class="intro-text">
+                <strong>Laboratorium B12</strong> <br>
+                Laboratorium ini diperuntukkan bagi siswa kelas 11. <br> Di sinilah siswa mulai mendalami berbagai aspek desain komunikasi visual <br> secara lebih intensif,
+                seperti desain grafis, ilustrasi digital, <br> dan pengolahan media visual lainnya. Fasilitas yang tersedia dirancang <br> untuk mendukung proyek-proyek
+                kreatif tingkat menengah dan lanjutan.
+              </p>
+            </div>
+            <div class="col-md-4 text-center">
+              <img src="../img/fotob12.jpg" alt="Foto B12" class="img-profil" width="280" height="200">
+            </div>
+          </div>
+
+          <!-- Laboratorium B13 -->
+          <div class="row mb-4">
+            <div class="col-md-4 text-center">
+              <img src="../img/fotob13.jpg" alt="Foto B13" class="img-profil" width="280" height="200">
+            </div>
+            <div class="col-md-8 d-flex align-items-center">
+              <p class="intro-text">
+                <strong>Laboratorium B13</strong> <br>
+                Laboratorium ini digunakan oleh siswa kelas 10 sebagai tempat <br> pengenalan dasar-dasar DKV. Di laboratorium ini, siswa 
+                belajar mengenal <br> elemen dasar desain, penggunaan perangkat lunak desain awal, serta <br> mengembangkan kreativitas visual
+                melalui berbagai latihan dan tugas praktikum.
+              </p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <p class="intro-text">
+                Dengan pembagian ruang laboratorium berdasarkan tingkat kelas, proses belajar menjadi lebih terstruktur dan sesuai dengan tingkat kemampuan siswa. <br> Hal ini diharapkan dapat menunjang perkembangan kompetensi desain yang optimal bagi setiap siswa di jurusan DKV.
+              </p>
+            </div>
+          </div>
+
+          <!-- Galeri -->
+          <div class="text-center mb-4">
+            <div class="py-2 px-4 d-inline-block text-white" style="background-color: #4f9186; border-radius: 8px;">
+              <h2 class="m-0" style="font-size: 1.5rem;">GALERY HASIL KARYA ANAK DKV</h2>
+            </div>
+          </div>
+
+          <h4 class="text-white mb-3">Digital Art</h4>
+          <div class="gallery-grid mb-5">
+            <div class="gallery-item"><img src="../img/karya 1.jpg" alt="Karya 1"></div>
+            <div class="gallery-item"><img src="../img/karya2.jpg" alt="Karya 2"></div>
+            <div class="gallery-item"><img src="../img/karya3.jpg" alt="Karya 3"></div>
+            <div class="gallery-item"><img src="../img/karya4.jpg" alt="Karya 4"></div>
+            <div class="gallery-item"><img src="../img/karya6.jpg" alt="Karya 5"></div>
+            <div class="gallery-item"><img src="../img/karya7.jpg" alt="Karya 6"></div>
+            <div class="gallery-item"><img src="../img/karya8.jpg" alt="Karya 7"></div>
+            <div class="gallery-item"><img src="../img/karya9.jpg" alt="Karya 8"></div>
+            <div class="gallery-item"><img src="../img/karya10.jpg" alt="Karya 9"></div>
+            <div class="gallery-item"><img src="../img/karya11.jpg" alt="Karya 10"></div>
+            <div class="gallery-item"><img src="../img/karya12.jpg" alt="Karya 11"></div>
+            <div class="gallery-item"><img src="../img/karya13.jpg" alt="Karya 12"></div>
+            <div class="gallery-item"><img src="../img/karya14.jpg" alt="Karya 13"></div>
+            <div class="gallery-item"><img src="../img/karya5.jpg" alt="Karya 14"></div>
+            <div class="gallery-item"><img src="../img/karya29.jpg" alt="Karya 15"></div>
+            <div class="gallery-item"><img src="../img/karya30.jpg" alt="Karya 16"></div>
+          </div>
+
+          <h4 class="text-white mb-3">Manual Art</h4>
+          <div class="gallery-grid">
+            <div class="gallery-item"><img src="../img/karya15.jpg" alt="Karya Manual 1"></div>
+            <div class="gallery-item"><img src="../img/karya16.jpg" alt="Karya Manual 2"></div>
+            <div class="gallery-item"><img src="../img/karya17.jpg" alt="Karya Manual 3"></div>
+            <div class="gallery-item"><img src="../img/karya18.jpg" alt="Karya Manual 4"></div>
+            <div class="gallery-item"><img src="../img/karya19.jpg" alt="Karya Manual 5"></div>
+            <div class="gallery-item"><img src="../img/karya22.jpg" alt="Karya Manual 6"></div>
+            <div class="gallery-item"><img src="../img/karya23.jpg" alt="Karya Manual 7"></div>
+            <div class="gallery-item"><img src="../img/karya24.jpg" alt="Karya Manual 8"></div>
+            <div class="gallery-item"><img src="../img/karya25.jpg" alt="Karya Manual 9"></div>
+            <div class="gallery-item"><img src="../img/karya21.jpg" alt="Karya Manual 10"></div>
+            <div class="gallery-item"><img src="../img/karya20.jpg" alt="Karya Manual 11"></div>
+            <div class="gallery-item"><img src="../img/karya26.jpg" alt="Karya Manual 12"></div>
+            <div class="gallery-item"><img src="../img/karya27.jpg" alt="Karya Manual 13"></div>
+            <div class="gallery-item"><img src="../img/karya28.jpg" alt="Karya Manual 14"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Full Width -->
+    <footer class="footer bg-teal text-white py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <img src="../img/logo_smk-removebg-preview.png" alt="Logo DKV" width="50" class="me-2">
+              <img src="../img/logo_dkv.png" alt="Logo DKV" width="50" class="me-2">
+              <div>
+                <h5 class="mb-0 fw-bold">DESAIN KOMUNIKASI VISUAL</h5>
+              </div>
+            </div>
+            <p class="mb-2">
+              Jl. Wijaya Kusuma No.46,<br>
+              Mojopanggung, Giri, Lingkungan Cuking Rw.,<br>
+              Kec. Banyuwangi, Kabupaten Banyuwangi,<br>
+              Jawa Timur 68425
+            </p>
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3948.9087478434535!2d114.34556408488115!3d-8.211931661290002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd14ff70f397b65%3A0xd4855a1d5d5b2480!2sSMK%20Negeri%201%20Banyuwangi!5e0!3m2!1sid!2sid!4v1754530333114!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="row">
+              <div class="col-4">
+                <h6 class="fw-bold">Selengkapnya</h6>
+                <ul class="list-unstyled">
+                  <li><a href="../home/index.html" class="text-white text-decoration-none">Beranda</a></li>
+                  <li><a href="../pictografest/picto.html" class="text-white text-decoration-none">Pictografest</a></li>
+                  <li><a href="../software/software.html" class="text-white text-decoration-none">Software</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h6 class="fw-bold">Akademik</h6>
+                <ul class="list-unstyled">
+                  <li><a href="../akademik/index.html" class="text-white text-decoration-none">Kurikulum</a></li>
+                  <li><a href="../akademik/profillulusan.html" class="text-white text-decoration-none">Profil Lulusan</a></li>
+                  <li><a href="../akademik/laboraturium.html" class="text-white text-decoration-none">Laboratorium DKV</a></li>
+                </ul>
+              </div>
+              <div class="col-4">
+                <h6 class="fw-bold">Profil</h6>
+                <ul class="list-unstyled">
+                  <li><a href="../profil/jurusan.html" class="text-white text-decoration-none">Jurusan</a></li>
+                  <li><a href="../profil/guru.html" class="text-white text-decoration-none">Guru Pengajar DKV</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-white mt-4">
+        <div class="text-center small">
+          © Desain Komunikasi Visual SMKN 1 Banyuwangi
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
