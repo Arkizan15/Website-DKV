@@ -1,11 +1,13 @@
 body {
-    background-image: url('software.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: white;
+  background-image: url('software.png');  /* ❌ Pindahkan ini */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
 }
+
+
 .overlay {
     position: fixed;
     top: 0;
@@ -82,3 +84,5 @@ body {
 .delay-4 { animation-delay: 1s; }
 .delay-5 { animation-delay: 1.2s; }
 .delay-6 { animation-delay: 1.4s; }
+
+
