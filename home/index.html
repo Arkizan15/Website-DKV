@@ -7,39 +7,6 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet"href="home.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css&quot; rel="stylesheet">
-  <style>
-    /* Tambahan CSS untuk teks di atas gambar */
-    .hero-section {
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-    }
-
-    .hero-section img {
-      width: 100%;
-      height: auto;
-      display: block;
-    }
-
-    .hero-text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-    }
-
-    .hero-text h1 {
-      font-size: 3rem;
-      font-weight: bold;
-    }
-
-    .hero-text h2 {
-      font-size: 1.5rem;
-    }
-  </style>
 </head>
 <body>
   <!-- Navbar -->
@@ -94,46 +61,56 @@
   </div>
 
   <!-- Tombol Navigasi -->
-  <<div class="container py-5">
-<div class="row g-4">
-<!
--Kartu 1 -->
-<div class="col-md-3 col-sm-6">
-<div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/gambar anak desain.jpg'); background-size: cover; background-position: center;">
-<div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
-<h5 class="card-title fw-bold">Profil Jurusan</h5>
+<div class="container py-5">
+  <div class="row g-4">
+
+    <!-- Kartu 1: Profil Jurusan -->
+    <div class="col-md-3 col-sm-6">
+      <a href="../profil/jurusan.html" class="text-decoration-none">
+        <div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/gambar anak desain.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+            <h5 class="card-title fw-bold">Profil Jurusan</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Kartu 2: Pictografest -->
+    <div class="col-md-3 col-sm-6">
+      <a href="../pictografest/picto.html" class="text-decoration-none">
+        <div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/foto-view.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+            <h5 class="card-title fw-bold">Pictografest</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Kartu 3: Akademik -->
+    <div class="col-md-3 col-sm-6">
+      <a href="../akademik/index.html" class="text-decoration-none">
+        <div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/gambar 2.jpg'); background-size: cover; background-position: center;">
+          <div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+            <h5 class="card-title fw-bold">Akademik</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Kartu 4: Profil Guru -->
+    <div class="col-md-3 col-sm-6">
+      <a href="../profil/guru.html" class="text-decoration-none">
+        <div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/guru dkv.JPG'); background-size: cover; background-position: center;">
+          <div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
+            <h5 class="card-title fw-bold">Profil Guru</h5>
+          </div>
+        </div>
+      </a>
+    </div>
+
+  </div>
 </div>
-</div>
-</div>
-<!
--Kartu 2 -->
-<div class="col-md-3 col-sm-6">
-<div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/foto-view.jpg'); background-size: cover; background-position: center;">
-<div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
-<h5 class="card-title fw-bold">Pictografest</h5>
-</div>
-</div>
-</div>
-<!
--Kartu 3 -->
-<div class="col-md-3 col-sm-6">
-<div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/gambar 2.jpg'); background-size: cover; background-position: center;">
-<div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
-<h5 class="card-title fw-bold">Akademik</h5>
-</div>
-</div>
-</div>
-<!
--Kartu 4 -->
-<div class="col-md-3 col-sm-6">
-<div class="card text-white text-center border-0" style="height: 200px; background-image: url('../img/guru dkv.JPG'); background-size: cover; background-position: center;">
-<div class="card-body d-flex align-items-center justify-content-center bg-dark bg-opacity-50">
-<h5 class="card-title fw-bold">Profil Guru</h5>
-</div>
-</div>
-</div>
-</div>
-</div>
+
   <!-- Kegiatan -->
   <section class="apa-kata-mereka text-white text-center d-flex align-items-center justify-content-center flex-column">
   <div class="overlay-content">
@@ -144,8 +121,6 @@
 
 
   <!-- Footer -->
- <!
--Footer -->
 <footer class="bg-teal text-white py-5">
 <div class="container">
 <div class="row">

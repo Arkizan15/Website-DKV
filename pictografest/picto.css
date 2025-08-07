@@ -375,3 +375,6 @@ body, html {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.footer {
+  background-color: #24A292;;
+}
