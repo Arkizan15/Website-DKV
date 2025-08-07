@@ -7,18 +7,60 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
       body {
-        background-color: #24A292;
+        background-color: #074C43;
+        color: white;
       }
+      .sidebar {
+        background-color: #063E37;
+        min-height: 100vh;
+        padding-top: 20px;
+      }
+      .sidebar .nav-link {
+        color: white;
+        font-weight: 500;
+        padding: 10px 20px;
+      }
+      .sidebar .nav-link.active {
+        background-color: #052F2A;
+        border-left: 5px solid white;
+      }
+      .content {
+        padding: 40px;
+      }
+      .section-title {
+        color: #C3FFB7;
+        font-weight: bold;
+        font-size: 1.2rem;
+      }
+      .intro-text {
+        font-size: 1rem;
+        margin-bottom: 20px;
+      }
+      .list-left, .list-right {
+        font-size: 1.1rem;
+        line-height: 2;
+        font-weight: bold;
+      }
+      .img-profil {
+        border-radius: 10px;
+        margin-bottom: 15px;
+      }
+      .sidebar img {
+        border-radius: 10px;
+        margin-top: 20px;
+        width: 100%;
+        height: auto;
+      }
     </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #1c8072;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #24A292;" >
       <div class="container-fluid">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <img src="../img/logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-top me-2">
           <div class="d-flex flex-column text-white">
-            <span class="fw-bold" style="line-height: 1;">DKV</span>
+            <span class="fw-bold">DKV</span>
             <span class="fw-bold" style="line-height: 1;">ESEMKASA</span>
           </div>
         </a>
@@ -64,32 +106,30 @@
     <div class="container-fluid min-vh-100 text-white py-4">
       <div class="row">
         <!-- Sidebar -->
-        <div class="col-md-3 bg-white text-dark p-4">
-          <h6 class="text-muted">PROFIL</h6>
-          <p><a href="#">Beranda</a> / <a href="#">Profil</a> / Guru Pengajar Jurusan DKV</p>
+        <div class="col-md-3 sidebar">
+          <nav class="nav flex-column">
+            <a class="nav-link " href="">PROFIL</a>
+            <a class="nav-link" href="jurusan.html">Jurusan</a>
+            <a class="nav-link active class="nav-link" href="guru.html">Guru Pengajar Jurusan DKV</a>
+          </nav>
 
-          <div class="mb-3">
-            <label class="form-label fw-bold">Guru Pengajar Jurusan DKV</label>
-            <ul class="list-unstyled">
-              <li><a href="jurusan.html">Jurusan</a></li>
-            </ul>
+          <!-- Tetap hanya gambar bg1 di sidebar -->
+          <div class="text-center mt-4">
+            <img src="../img/bg1.png" alt="DKV Sidebar Logo" width="450">
           </div>
-
-          <img src="../img/dkv.jpg" alt="DKV" class="img-fluid mt-3" style="height: 400px; width: auto;" />
-          <img src="../img/bupati.jpg" alt="Gambar Kedua">
         </div>
 
         <!-- Content -->
         <div class="col-md-9 p-4">
-          <h2 class="fw-bold">Program Keahlian DKV</h2>
+          <h2 class="fw-bold">Guru Pengajar Jurusan DKV</h2>
           <p>
-            Program keahlian DKV ini memadukan seni design tradisional (kertas dan gambar) dengan teknologi digital.
-            Dalam program keahlian DKV ini akan dibekali kemampuan design, ilustrasi, fotografi, animasi,
-            media interaksi hingga pembuatan film/video.
+           Jurusan Desain Komunikasi Visual SMKN 1 Banyuwangi dibimbing oleh empat orang guru 
+           profesional yang kompeten di bidangnya, baik sebagai pengajar teori maupun praktisi di dunia industri kreatif.
+           Mereka tidak hanya mengajar, tetapi juga menanamkan kedisiplinan, etika kerja, dan kreativitas tinggi kepada para siswa.
           </p>
 
          
-          <img src="../img/gambar anak desain.jpg" alt="Program DKV" class="img-fluid rounded mt-3 shadow" />
+          <img src="../img/Guru DKV.jpg" alt="Program DKV" class="img-fluid rounded mt-3 shadow" />
         </div>
       </div>
     </div>
@@ -97,3 +137,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
