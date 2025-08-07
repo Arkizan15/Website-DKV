@@ -1,4 +1,8 @@
 /* Section: Apa Kata Mereka */
+body {
+  background-color: #004d40;
+}
+
 .apa-kata-mereka {
   position: relative;
   display: flex;
