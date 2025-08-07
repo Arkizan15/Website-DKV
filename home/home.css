@@ -2,7 +2,36 @@
 body {
   background-color: #004d40;
 }
+.hero-section {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
 
+    .hero-section img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .hero-text h2 {
+      font-size: 1.5rem;
+    }
 .apa-kata-mereka {
   position: relative;
   display: flex;
