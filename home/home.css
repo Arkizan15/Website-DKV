@@ -88,11 +88,27 @@
 }
 
 /* Teks di atas gambar */
-.menu-item span {
-  position: relative;
-  z-index: 1;
-  font-weight: bold;
+
+    
+
+bg-teal {
+background-color: #21a69e;
 }
-.container {
-    background-color: #004d40;
+.bg-teal {
+  background-color: #24A292 !important;
+}
+.bg-teal {
+background-color: #197d70;
+}
+
+.card-hover:hover {
+transform: scale(1.03);
+transition: 0.3s;
+box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+font-size: 1.2rem;
+font-weight: bold;
+margin-top: 10px;
 }
